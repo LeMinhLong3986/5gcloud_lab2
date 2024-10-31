@@ -9,7 +9,7 @@ Dự án này minh họa cách triển khai một ứng dụng web tĩnh trên K
    minikube start --driver=docker
 2. Cấu hình Docker Daemon cho Minikube:
    ```bash
-   & minikube -p minikube docker-env --shell=powershell | Invoke-Expression
+   minikube -p minikube docker-env --shell=powershell | Invoke-Expression
 
 3. Build Docker Image:
    ```bash
@@ -27,4 +27,4 @@ Dự án này minh họa cách triển khai một ứng dụng web tĩnh trên K
    ```bash
    minikube service static-web-service
 
-7. Truy cập vào trang web ở đường dẫn URL dưới dòng "Starting tunnel for service static-web-service" trong Terminal vì sử dụng tunnel (127.0.0.1:<port>) thường đáng tin cậy hơn trên Windows.
+7. Truy cập vào trang web ở đường dẫn URL dưới dòng "Starting tunnel for service static-web-service" trong Terminal vì sử dụng tunnel (127.0.0.1:port) thường đáng tin cậy hơn trên Windows.
